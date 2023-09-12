@@ -13,39 +13,33 @@ Comenzamos a crear las base de datos estructurada previamente y a cargar datos m
 ## 4. Consultas
 
 
-✅  Un vuelo que va desde un origen a un destino y a una hora determinada, tiene un número de vuelo. De cada vuelo se desea saber el avión en el que se ha hecho (del cual se conoce la mátricula, modelo, capacidad, año de producción), el piloto, cada uno de los miembros de la tripulación y cantidad de pasajeros.
+✅ De cada vuelo se desea saber el avión en el que se ha hecho (del cual se conoce la mátricula, modelo, capacidad, año de producción) el piloto, cada uno de los miembros de la tripulación y cantidad de pasajeros.
 
-✅ Encuentra todos los vuelos (número de vuelo, hora de salida, origen y destino) realizados por un piloto específico (por nombre o ID del piloto).
+✅Encuentra todos los vuelos (número de vuelo, hora de salida, origen, destino y cantidad de pasajeros) realizados por un piloto específico (por nombre o ID del piloto)
 
 ✅ Muestra una lista de pilotos con sus nombres y la cantidad total de horas de vuelo acumuladas por cada uno.
 
-✅ Encuentra todos los vuelos (número de vuelo, hora de salida, origen y destino) asignados a una tripulación específica por su nombre o ID de tripulación.
+✅Encuentra todos los vuelos (número de vuelo, hora de salida, origen y destino) asignados a una tripulación específica por su nombre o ID de tripulación
 
 ✅ Muestra una lista de pilotos con sus nombres y la fecha en que ingresaron a la tripulación.
 
-✅ 6Encuentra todos los pasajeros (nombre y apellido) que han reservado un vuelo específico (por número de vuelo).
+✅ Encuentra todos los pasajeros (nombre y apellido) que han reservado un vuelo específico (por número de vuelo).
 
-✅ Muestra los detalles de un vuelo (número de vuelo, hora de salida, origen, destino) junto con el modelo de avión y el nombre del piloto asignado.
-
-✅ Encuentra todos los vuelos (número de vuelo, hora de salida, origen y destino) realizados por un avión específico (por matrícula).
-
-✅ Encuentra la fecha de ingreso de un piloto específico a la tripulación.
+✅ Encuentra la fecha de ingreso de un piloto específico a la tripulación, proporcionando su nombre.
 
 ✅ Calcula el promedio de pasajeros por destino y muestra los destinos en orden descendente según el promedio.
 
 ✅ Encuentra el número de vuelo que tuvo la mayor cantidad de pasajeros.
 
-✅  Calcula el total de horas de vuelo para cada destino y muéstralos en orden ascendente.
-
 ✅ Encuentra el destino con el mayor número de pasajeros y muestra el destino y el número de pasajeros.
 
-✅ Encuentra los nombres de los miembros de tripulación asignados a vuelos que han tenido más pasajeros que la media de pasajeros en todos los vuelos.
+✅ Encuentra los nombres de los grupos de tripulación asignados a vuelos que han tenido más pasajeros que la media de pasajeros en todos los vuelos.
 
 ✅ Muestra los nombres de los miembros de tripulación asignados a vuelos que tengan más de 200 pasajeros.
 
-✅  Elimina todos los vuelos que tengan menos de 10 pasajeros.
+✅ Elimina todos los vuelos que tengan menos de 10 pasajeros.
 
-✅ Cambia la fecha de salida de un vuelo específico (proporciona el número de vuelo)
+✅ Cambia la hora de salida de un vuelo específico, proporcionando el número de vuelo.
 
-✅ Cuántos vuelos han tenido más de 100 pasajeros.
+✅ Calcula cuántos vuelos han tenido más de 100 pasajeros.
 
