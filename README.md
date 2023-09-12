@@ -10,7 +10,7 @@ En segunda instancia pasamos al modelo lógico definiendo las estructuras de las
 ## 3. Creación de la base de datos, las tablas y la carga de datos.([BBDDCompania-aerea.sql](https://github.com/NoeAvalos/Base-de-datos-Compa-ia-aerea/blob/5c78a6fbbb9274c8df182ed4b6a41d29c0ca872c/BBDDCompania-aerea.sql))
 Comenzamos a crear las base de datos estructurada previamente y a cargar datos mediante codigo SQL
 
-## 4. Consultas
+## 4. Consultas ([BBDDQueries.sql](https://github.com/NoeAvalos/Base-de-datos-Compa-ia-aerea/blob/09a551ca4a7cf9357808ce04139df68c9e50656f/BBDDQueries.sql))
 
 
 ✅ De cada vuelo se desea saber el avión en el que se ha hecho (del cual se conoce la mátricula, modelo, capacidad, año de producción) el piloto, cada uno de los miembros de la tripulación y cantidad de pasajeros.
