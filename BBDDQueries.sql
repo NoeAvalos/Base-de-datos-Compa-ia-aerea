@@ -105,3 +105,20 @@ WHERE numero_vuelo = 8;
 SELECT COUNT(numero_vuelo) 
 FROM Vuelos
 WHERE cantidad_pasajeros > 100;
+
+#Crea una vista llamada "VistaPromedioPasajeros" que muestre la cantidad promedio de pasajeros por vuelo en la tabla "Vuelos"
+
+CREATE VIEW VistaPromedioPasajeros as SELECT numero_vuelo, destino, ROUND(AVG(cantidad_pasajeros),0) AS promedio_pasajeros 
+FROM Vuelos 
+GROUP BY numero_vuelo;
+
+#Crea una vista llamada "VistaTripulacion" que muestre los nombres de los miembros de la tripulación y el número de vuelo al que están asignados. Utiliza las tablas "MiembrosTripulacion" y "Trip_Asignada"
+
+CREATE VIEW VistaTripulacion AS
+SELECT CONCAT( mt.nombre,' ', mt.apellido) AS nombre, t.grupo_asignado, v.numero_vuelo
+FROM MiembrosTripulacion mt
+LEFT JOIN trip_asignada t
+ON mt.idTripulante = t.idTripulante 
+INNER JOIN Vuelos v
+ON v.numero_vuelo = t.numero_vuelo;
+
