@@ -43,7 +43,12 @@ Comenzamos a crear las base de datos estructurada previamente y a cargar datos m
 
 ✅ Calcula cuántos vuelos han tenido más de 100 pasajeros.
 
-✅Crea una vista llamada "VistaPromedioPasajeros" que muestre la cantidad promedio de pasajeros por vuelo en la tabla "Vuelos"
+✅ Crea una vista llamada "VistaPromedioPasajeros" que muestre la cantidad promedio de pasajeros por vuelo en la tabla "Vuelos"
 
-✅Crea una vista llamada "VistaTripulacion" que muestre los nombres de los miembros de la tripulación y el número de vuelo al que están asignados. Utiliza las tablas "MiembrosTripulacion" y "Trip_Asignada"
+✅ Crea una vista llamada "VistaTripulacion" que muestre los nombres de los miembros de la tripulación y el número de vuelo al que están asignados. Utiliza las tablas "MiembrosTripulacion" y "Trip_Asignada"
+
+✅ Crea un procedimiento almacenado que muestre la información sobre vuelos y aviones y  la cantidad de asientos disponibles en cada vuelo.
+
+✅ Crea un procedimiento almacenado que busque un pasajero por su numero de DNI 
+
 
