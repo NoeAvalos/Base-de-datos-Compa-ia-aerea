@@ -122,3 +122,29 @@ ON mt.idTripulante = t.idTripulante
 INNER JOIN Vuelos v
 ON v.numero_vuelo = t.numero_vuelo;
 
+#Crea un procedimiento almacenado que muestre la información sobre vuelos y aviones y  la cantidad de asientos disponibles en cada vuelo.
+delimiter //
+CREATE PROCEDURE stock_pasajes()
+BEGIN
+SELECT v.numero_vuelo,v.destino, a.modelo, (a.capacidad - v.cantidad_pasajeros) AS asientos_disponibles
+FROM Vuelos v
+INNER JOIN Aviones a
+ON v.matricula = a.matricula;
+END //
+delimiter ;
+
+call stock_pasajes()
+  
+#Crea un procedimiento almacenado que busque un pasajero por su numero de DNI 
+
+DELIMITER //
+CREATE PROCEDURE busqueda_pasajero(IN p_dni varchar(8))
+BEGIN 
+SELECT CONCAT(nombre,' ',apellido) as nombre
+FROM Pasajeros
+WHERE DNI = p_dni;	
+END //
+DELIMITER ;
+
+CALL busqueda_pasajero('21098768')	
+
